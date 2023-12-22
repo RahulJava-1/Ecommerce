@@ -9,9 +9,9 @@ import razorpay
 from django.conf import settings
 from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
+
 # Create your views here.
 
-@login_required
 def index(request):
     totalitem=0
     wishlist=0
@@ -20,7 +20,7 @@ def index(request):
         wishlist=len(Wishlist.objects.filter(user=request.user))
     return render(request,'app/index.html',locals())
 
-@login_required
+
 def about(request):
     totalitem=0
     wishlist=0
@@ -29,7 +29,7 @@ def about(request):
         wishlist=len(Wishlist.objects.filter(user=request.user))
     return render(request,'app/about.html',locals())
 
-@login_required
+
 def contact(request):
     totalitem=0
     wishlist=0
@@ -38,7 +38,7 @@ def contact(request):
         wishlist=len(Wishlist.objects.filter(user=request.user))
     return render(request,'app/contact.html',locals())
 
-@method_decorator(login_required,name='dispatch')
+#@method_decorator(login_required,name='dispatch')
 class CategoryView(View):
     def get(self,request,val):
         totalitem=0

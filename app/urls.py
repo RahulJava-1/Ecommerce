@@ -45,6 +45,6 @@ urlpatterns = [
     path('logout/',auth_view.LogoutView.as_view(next_page='login'), name='logout'),
 ]+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
-admin.site.site_header = "Neel Dairy"
-admin.site.site_title = "Neel Dairy"
-admin.site.site_index_title = "Welcome to Neel Dairy Shop"
+admin.site.site_header = "SMPS Electro"
+admin.site.site_title = "SMPS Electro"
+admin.site.site_index_title = "Welcome to SMPS Electro Shop"

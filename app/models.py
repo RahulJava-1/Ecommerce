@@ -3,14 +3,11 @@ from django.contrib.auth.models import User
 
 # Create your models here.
 CATAGORY_CHOICES=(
-    ('CR','Curd'),
-    ('ML','Milk'),
-    ('LS','Lassi'),
-    ('MS','Milkshake'),
-    ('PN','Paneer'),
-    ('GH','Ghee'),
-    ('CZ','Cheese'),
-    ('IC','Ice-Creams')
+    ('EC','E-Cycle'),
+    ('ES','E-Scooty/Bike'),
+    ('ER','E-Rikshaw'),
+    ('EL','E-Loader'),
+    ('GV','Garbage Vehical')
 )
 
 STATE_CHOICES=(

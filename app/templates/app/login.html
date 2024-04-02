@@ -6,8 +6,8 @@
 <div class="container">
     <div class="row my-3">
         <div class="col-sm-6 offset-sm-3">
-            <h3 class="text-center">Login</h3>
-            <form action="" method="post" novalidate class="shadow p-5">
+            <h3 class="text-center">Login</h3><hr>
+            <form action="" method="post" novalidate class="shadow p-5 text-dark" style="background-color:lightblue;">
                 {% csrf_token %}
                 {% for fm in form %}
                 {{fm.label_tag}} {{fm}} <small class="text-danger">{{fm.error|striptags}}</small><br>
